@@ -88,8 +88,8 @@
                 return;
             }
 
-            let url = https://api.github.com/users/${username}/repos;
-
+            let url = `https://api.github.com/users/${username}/repos`;
+            
             fetch(url)
             .then(response => {
                 if (!response.ok) {
